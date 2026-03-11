@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Books</title>
+</head>
+<body>
+
+  <nav>
+    <a href="home.html"><b>Online Library</b></a> &nbsp;&nbsp;
+    <a href="home.html">Home</a> &nbsp;&nbsp;
+    <a href="browse.html">Browse Books</a> &nbsp;&nbsp;
+    <a href="search.html">Search</a> &nbsp;&nbsp;
+    <a href="borrowed.html">My Borrowed Books</a> &nbsp;&nbsp;
+    <span>| Welcome User</span> &nbsp;&nbsp;
+    <a href="logout.html">Logout</a>
+  </nav>
+
+  <hr>
+
+  <h2>Search for Books</h2>
+
+  <form action="search_results.html" method="get">
+    Search Word: 
+    <input type="text" name="query" placeholder="type here..." required>
+
+    &nbsp;&nbsp; Search By: 
+    <select name="searchType" required>
+      <option value="title">Title</option>
+      <option value="author">Author</option>
+      <option value="category">Category</option>
+    </select>
+
+    <button type="submit">Search</button>
+  </form>
+
+  <br>
+  <hr>
+
+  <h3>Results</h3>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th>ID</th>
+      <th>Book Name</th>
+      <th>Author</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Utopia</td>
+      <td>Ahmed Khaled</td>
+      <td>Novel</td>
+      <td>Available</td>
+      <td><a href="book.html?id=1">View</a></td>
+    </tr>
+  </table>
+
+  <br><hr>
+  <p>2026 Online Library Project</p>
+
+</body>
+</html>

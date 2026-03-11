@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Book</title>
+</head>
+<body>
+
+  <nav>
+    <a href="adminHome.html"><b>Online Library</b></a> &nbsp;&nbsp;
+    <a href="adminHome.html">Home</a> &nbsp;&nbsp;
+    <a href="browse.html">Browse Books</a> &nbsp;&nbsp;
+    <a href="addBook.html">Add Book</a> &nbsp;&nbsp;
+    <span>| Welcome Admin</span> &nbsp;&nbsp;
+    <a href="logout.html">Logout</a>
+  </nav>
+
+  <hr>
+
+  <h2>Add Book to Library</h2>
+  <p>Please enter book details below:</p>
+  <br>
+
+  <form action="success.html" method="post">
+
+    Book ID: <br>
+    <input type="number" name="id" required> <br><br>
+
+    Book Name: <br>
+    <input type="text" name="bname" required> <br><br>
+
+    Author Name: <br>
+    <input type="text" name="auth" required> <br><br>
+
+    Category: <br>
+    <select name="cat" required>
+      <option value="fiction">Fiction</option>
+      <option value="science">Science</option>
+      <option value="history">History</option>
+    </select> <br><br>
+
+    Description: <br>
+    <textarea name="desc" rows="4" cols="30" required></textarea> <br><br>
+
+    <input type="submit" value="Save Book">
+    <input type="reset" value="Clear">
+
+  </form>
+
+  <br><hr>
+  <p>2026 Online Library Project</p>
+
+</body>
+</html>
