@@ -16,7 +16,7 @@ table{
 
 </head>
 
-<body>
+<body background="images/library.png">
 
 <!-- ===== Page Title ===== -->
 <div>
@@ -29,20 +29,35 @@ table{
 
 <nav>
 
-<hr>
+    <hr>
 
-<table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
+    <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
 
-<tr>
-<td><a href=""><h2>Search a book</h2></a></td>
-<td><a href=""><h2>Add a book</h2></a></td>
-<td><a href=""><h2>View profile</h2></a></td>
-<td><a href=""><h2>Sign out</h2></a></td>
-</tr>
+        <tr>
+            <td><a href="adminHP.html"><h2>Home</h2></a></td>
+            <td><a href=""><h2>view your books</h2></a></td>
+            <td><a href=""><h2>View profile</h2></a></td>
+            <td><a href=""><h2>Sign out</h2></a></td>
+        </tr>
 
-</table>
+    </table>
 
-<hr>
+    <hr>
+
+    <h1 align="center">
+
+        <hr>
+
+        <form action="adminHP.html" method="get">
+            <input type="text" name="query" placeholder="Search by title, author or category..." size="60">
+            <button type="submit">Search</button>
+        </form>
+
+        <hr>
+    </h1>
+
+
+
 
 </nav>
 
