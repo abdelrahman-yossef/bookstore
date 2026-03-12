@@ -4,27 +4,27 @@
   <meta charset="UTF-8">
   <title>Search Books</title>
 </head>
-<body background="images/library.png">
+<body background="images/searchBackground2.jpg">
 
   <nav>
-    <a href="adminHP.html"><b>Online Library</b></a> &nbsp;&nbsp;
-    <a href="adminHP.html">Home</a> &nbsp;&nbsp;
-    <a href="borrowingBooks.html">Browse My Books</a> &nbsp;&nbsp;
-    <a href="search.html">Search</a> &nbsp;&nbsp;
-    <a href="add.html">Add book</a> &nbsp;&nbsp;
-    <span>| Welcome User</span> &nbsp;&nbsp;
-    <a href="login.html">Logout</a>
+    <a href="adminHP.html"><b> <font color="cyan">Online Library </font> </b></a> &nbsp;&nbsp;
+    <a href="adminHP.html"> <font color="cyan">Home </font>   </a> &nbsp;&nbsp;
+    <a href="borrowingBooks.html"> <font color="cyan">Browse My Books </font> </a> &nbsp;&nbsp;
+    <a href="search.html"> <font color="cyan">search </font></a> &nbsp;&nbsp;
+    <a href="add.html"> <font color="cyan">Add a book </font></a> &nbsp;&nbsp;
+    <span> <font color="white"><big>| Welcome User</big>  </font> </span> &nbsp;&nbsp;
+    <a href="login.html"> <font color="red">Log out </font></a>
   </nav>
 
   <hr>
 
-  <h2>Search for Books</h2>
+  <font color="white"><h2>Search for Books</h2> </font> 
 
   <form action="search_results.html" method="get">
-    Search Word: 
-    <input type="text" name="query" placeholder="type here..." required>
+    
+    <input type="text" name="query" placeholder="Search" required>
 
-    &nbsp;&nbsp; Search By: 
+    &nbsp;&nbsp; 
     <select name="searchType" required>
       <option value="title">Title</option>
       <option value="author">Author</option>
@@ -37,8 +37,8 @@
   <br>
   <hr>
 
-  <h3>Results</h3>
-  <table border="1" cellpadding="5" cellspacing="0">
+  <font color="white"><big><h3>Results</h3> </big></font>
+  <table border="1" cellpadding="5" cellspacing="0" bgcolor="lightgrey" >
     <tr>
       <th>ID</th>
       <th>Book Name</th>
@@ -58,7 +58,7 @@
   </table>
 
   <br><hr>
-  <p>2026 Online Library Project</p>
+  <font color="lightgrey"><p>2026 Online Library Project</p> </font>
 
 </body>
 </html>

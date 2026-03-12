@@ -4,51 +4,53 @@
   <meta charset="UTF-8">
   <title>Add New Book</title>
 </head>
-<body background="images/library.png">
+<body background="images/addBookBackground.png">
 
-  <nav>
-    <a href="adminHP.html"><b>Online Library</b></a> &nbsp;&nbsp;
-    <a href="adminHP.html">Home</a> &nbsp;&nbsp;
-    <a href="borrowingBooks.html">Browse My Books</a> &nbsp;&nbsp;
-    <a href="add.html">Add Book</a> &nbsp;&nbsp;
-    <span>| Welcome Admin</span> &nbsp;&nbsp;
-    <a href="login.html">Logout</a>
+   <nav>
+    <a href="adminHP.html"><b> <font color="cyan">Online Library </font> </b></a> &nbsp;&nbsp;
+    <a href="adminHP.html"> <font color="cyan">Home </font>   </a> &nbsp;&nbsp;
+    <a href="borrowingBooks.html"> <font color="cyan">Browse My Books </font> </a> &nbsp;&nbsp;
+    <a href="search.html"> <font color="cyan">search </font></a> &nbsp;&nbsp;
+    <a href="add.html"> <font color="cyan">Add a book </font></a> &nbsp;&nbsp;
+    <span> <font color="white"><big>| Welcome User</big>  </font> </span> &nbsp;&nbsp;
+    <a href="login.html"> <font color="red">Log out </font></a>
   </nav>
 
   <hr>
 
-  <h2>Add Book to Library</h2>
-  <p>Please enter book details below:</p>
+  <font color="lightgrey "><h2>Add Book to Library</h2> </font>
+  <font color="lightgrey "><p>Please enter book details below:</p> </font>
+  
   <br>
 
   <form action="success.html" method="post">
 
-    Book ID: <br>
-    <input type="number" name="id" required> <br><br>
+     <br>
+    <input type="number" name="id" required placeholder="Book ID"> <br><br>
 
-    Book Name: <br>
-    <input type="text" name="bname" required> <br><br>
+    <br>
+    <input type="text" name="bname" required placeholder="Book Name"> <br><br>
 
-    Author Name: <br>
-    <input type="text" name="auth" required> <br><br>
+    <br>
+    <input type="text" name="auth" required placeholder="Author Name"> <br><br>
 
-    Category: <br>
+    <font color="white">Category:  </font><br>
     <select name="cat" required>
       <option value="fiction">Fiction</option>
       <option value="science">Science</option>
       <option value="history">History</option>
     </select> <br><br>
 
-    Description: <br>
-    <textarea name="desc" rows="4" cols="30" required></textarea> <br><br>
+    <br>
+    <textarea name="desc" rows="4" cols="30" required placeholder=" Description"></textarea> <br><br>
 
     <input type="submit" value="Save Book">
     <input type="reset" value="Clear">
 
   </form>
 
-  <br><hr>
-  <p>2026 Online Library Project</p>
+  <br>
+   <font color="lightgrey"> <p>2026 Online Library Project</p> </font><br> 
 
 </body>
 </html>
