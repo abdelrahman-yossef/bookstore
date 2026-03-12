@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Books</title>
+</head>
+<body background="images/searchBackground2.jpg">
+
+  <nav>
+    <a href="userNavBar.html"><b> <font color="cyan">Online Library </font> </b></a> &nbsp;&nbsp;
+    <a href="userNavBar.html"> <font color="cyan">Home </font>   </a> &nbsp;&nbsp;
+    <a href="borrowingBooks.html"> <font color="cyan">Browse My Books </font> </a> &nbsp;&nbsp;
+    <a href="search.html"> <font color="cyan">search </font></a> &nbsp;&nbsp;
+    <a href="add.html"> <font color="cyan">Add a book </font></a> &nbsp;&nbsp;
+    <span> <font color="white"><big>| Welcome User</big>  </font> </span> &nbsp;&nbsp;
+    <a href="login.html"> <font color="red">Log out </font></a>
+  </nav>
+
+  <hr>
+
+  <font color="white"><h2>Search for Books</h2> </font> 
+
+  <form action="search_results.html" method="get">
+    
+    <input type="text" name="query" placeholder="Search" required>
+
+    &nbsp;&nbsp; 
+    <select name="searchType" required>
+      <option value="title">Title</option>
+      <option value="author">Author</option>
+      <option value="category">Category</option>
+    </select>
+
+    <button type="submit">Search</button>
+  </form>
+
+  <br>
+  <hr>
+
+  <font color="white"><big><h3>Results</h3> </big></font>
+  <table border="1" cellpadding="5" cellspacing="0" bgcolor="lightgrey" >
+    <tr>
+      <th>ID</th>
+      <th>Book Name</th>
+      <th>Author</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Utopia</td>
+      <td>Ahmed Khaled</td>
+      <td>Novel</td>
+      <td>Available</td>
+      <td><a href="book.html?id=1">View</a></td>
+    </tr>
+  </table>
+
+  <br><hr>
+  <font color="lightgrey"><p>2026 Online Library Project</p> </font>
+
+</body>
+</html>
