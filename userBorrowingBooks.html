@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>The Metamorphosis</title>
+<meta charset="UTF-8">
+<title>Borrowed Books</title>
 
 <style>
 body{
     background-color:white;
 }
 
-.book-box{
-    padding:20px;
+table{
+    text-align:center;
 }
 </style>
 
@@ -17,16 +18,14 @@ body{
 
 <body background="images/library.png">
 
-<!-- ======= Page Title ======= -->
+<!-- ===== Page Title ===== -->
 <div>
 <center>
 <img src="images/BookStoreLogo.png" width="700">
 </center>
 </div>
 
-<!-- ======= Navigation Bar ======= -->
-
-<!-- =========navigation bar ================= -->
+ <!-- =========navigation bar ================= -->
     <nav>
         <hr>
 
@@ -62,45 +61,45 @@ body{
 
 
 
-<!-- ======= Book Details ======= -->
+<!-- ===== Borrowed Books Section ===== -->
 
-<table border="1" bgcolor="white" width="100%" cellpadding="20">
+<table border="1" bgcolor="grey" cellpadding="11" cellspacing="5" width="100%">
+<tr>
+<td><center><big>My Borrowed Books</big></center></td>
+</tr>
+</table>
+
+
+<table border="1" bgcolor="white" cellpadding="10" cellspacing="5" width="100%">
 
 <tr>
+<th>Title</th>
+<th>Author</th>
+<th>Genre</th>
+<th>Borrow Date</th>
+<th>Return Date</th>
+<th>Status</th>
+</tr>
 
-<td width="30%" align="center">
+<tr>
+<td>The Metamorphosis</td>
+<td>Franz Kafka</td>
+<td>Philosophical Novel</td>
+<td>1 May</td>
+<td>15 May</td>
+<td>Borrowed</td>
+</tr>
 
-<img src="images/KafkaCover.jpg" width="300">
-
-</td>
-
-<td class="book-box">
-
-<h1>The Metamorphosis - المسخ</h1>
-
-<h3>Author: Franz Kafka</h3>
-
-<h3>Genre: Philosophical Novel</h3>
-
-<h3>Pages: 70</h3>
-
-<h3>Price: 200 L.E</h3>
-
-<p>
-A man wakes up one morning to find himself transformed into a giant insect.
-The story explores isolation, identity, and how society treats those who become different.
-</p>
-
-<h3>Status: Available</h3>
-
-<a href="userBorrowingBooks.html">Borrow Book</a>
-
-</td>
-
+<tr>
+<td>The Origin of Species</td>
+<td>Charles Darwin</td>
+<td>Biology</td>
+<td>3 May</td>
+<td>17 May</td>
+<td>Borrowed</td>
 </tr>
 
 </table>
 
 </body>
-
 </html>

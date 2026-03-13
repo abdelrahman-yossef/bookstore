@@ -25,43 +25,40 @@ table{
 </center>
 </div>
 
-<!-- ===== Navigation Bar ===== -->
-
-<nav>
-
-    <hr>
-
-    <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
-
-        <tr>
-            <td><a href="adminHP.html"><h2>Home</h2></a></td>
-            <td><a href=""><h2>view your books</h2></a></td>
-            <td><a href="add.html" title="click to go"><h2>Add a Book</h2> </a> </td>
-            <td><a href=""><h2>View profile</h2></a></td>
-            <td><a href=""><h2>Sign out</h2></a></td>
-
-        </tr>
-
-    </table>
-
-    <hr>
-
-    <h1 align="center">
-
+<!-- =========navigation bar ================= -->
+    <nav>
         <hr>
 
-        <form action="adminHP.html" method="get">
-            <input type="text" name="query" placeholder="Search by title, author or category..." size="60">
-            <button type="submit">Search</button>
-        </form>
+        <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
+            <caption> navigation bar</caption>
 
+            <thead>
+                <tr>
+                    <td><a href="adminHP.html"><h2>Home</h2></a></td>
+                    <td><a href="borrowingBooks.html" title="click to go"><h2>view your books</h2> </a> </td>
+                    <td><a href="search.html" title="click to go"><h2>Search</h2> </a> </td>
+                    <td><a href="add.html" title="click to go"><h2>Add a Book</h2> </a> </td>
+                    <td><a href="" title="click to go"><h2>View profile</h2> </a> </td>
+                    <td><a href="login.html" title="click to go"><h2>Sign out</h2> </a> </td>
+
+                </tr>
+            </thead>
+
+        </table>
         <hr>
-    </h1>
+        <h1 align="center">
 
+            <hr>
 
+            <form action="adminHP.html" method="get">
+                <input type="text" name="query" placeholder="Quick search..." size="60">
+                <button type="submit">Search</button>
+            </form>
 
+            <hr>
+        </h1>
 
-</nav>
+    </nav>
 
 
 <!-- ===== Borrowed Books Section ===== -->
