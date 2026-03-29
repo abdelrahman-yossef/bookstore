@@ -23,34 +23,38 @@
   
   <br>
 
-  <form action="success.html" method="post">
+  
 
      <br>
-    <input type="number" name="id" required placeholder="Book ID"> <br><br>
+    <input type="number" id="id" required placeholder="Book ID"> <br><br>
 
     <br>
-    <input type="text" name="bname" required placeholder="Book Name"> <br><br>
+    <input type="text" id="bname" required placeholder="Book Name"> <br><br>
 
     <br>
-    <input type="text" name="auth" required placeholder="Author Name"> <br><br>
+    <input type="text" id="bprice" required placeholder="Book Price"> <br><br>
+
+    <br>
+    <input type="text" id="author" required placeholder="Author Name"> <br><br>
+    <input type="text" id="image"  placeholder="enter image path"> <br><br>
 
     <font color="white">Category:  </font><br>
-    <select name="cat" required>
+    <select id="catigory" required>
       <option value="fiction">Fiction</option>
       <option value="science">Science</option>
       <option value="history">History</option>
     </select> <br><br>
 
     <br>
-    <textarea name="desc" rows="4" cols="30" required placeholder=" Description"></textarea> <br><br>
+    <textarea id="desc" rows="4" cols="30"  placeholder=" Description"></textarea> <br><br>
 
-    <input type="submit" value="Save Book">
+    <button onclick="handleAdd()">Add Book</button>
     <input type="reset" value="Clear">
 
-  </form>
+
 
   <br>
    <font color="lightgrey"> <p>2026 Online Library Project</p> </font><br> 
-
+<script src="addjs.js"></script>
 </body>
 </html>

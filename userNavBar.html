@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book-Store</title>
-    <style>
-        body {
-            background-color: rgb(255, 255, 255);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body background="images/library.png">
@@ -53,110 +49,8 @@
     </nav>
 
     <!--======books Div ======  -->
-    <div>
-
-
-        <table border="1" bgcolor="grey" cellpadding="12" cellspacing="1" width="100%">
-            <thead>
-                <tr>
-                     <td> <center> <big> Welcom <font color="lightgreen">"<u>User </u>"</font>  Here is your Available Books</big> </center></td>
-                </tr>
-            </thead>
-        </table>
-        <table border="1" bgcolor="white" cellpadding="5" cellspacing="5" width="100%">
-            <!-- much cleaner and easier on the eye (IMO) -->    
-            <thead>
-                <tr>
-                    <td colspan="2">
-                        <img src="images/utopiaBookCover.jpg" alt="" width="200">
-                        <h2>Utopia - يوتوبيا</h2>
-                        <p><b>By:</b> Ahmed Khaled Tawfeek</p>
-                        <p>Price: 250 L.E</p>
-                        <a href=""><h2>View</h2></a>
-                        <a href="userBorrowingBooks.html"><h2>Borrow</h2></a>
-                        
-
-                    </td>
-
-
-
-
-                    <td colspan="2">
-                        <img src="images/hitlerBookCover.jpg" alt="" width="200">
-                        <h2>Mein kampf-كفاحي</h2>
-                        <p><b>By:</b>Adolf Hitler</p>
-                        <p>Price: 450 L.E</p>
-                        
-                         <a href=""><h2>View</h2></a>
-                        <a href="userBorrowingBooks.html"><h2>Borrow</h2></a>
-                    </td>
-
-
-
-                    <td colspan="2">
-                        <img src="images/ZikolaCover.jpg" alt="" width="200">
-                        <h2> Ard Zikola- ارض زيكولا</h2>
-                        <p><b>By: Ahmed Mourad</b></p>
-                        <p>Price: 350 L.E</p>
-                        
-                         <a href=""><h2>View</h2></a>
-                        <a href="userBorrowingBooks.html"><h2>Borrow</h2></a>
-                    </td>
-
-                    <td colspan="2">
-                        <img src="images/soloLevelingCover.jpg" alt="" width="200">
-                        <h2> Solo Leveling </h2>
-                        <p><b>By: Chogong</b></p>
-                        <p>Price: 300 L.E</p>
-                        
-                         <a href=""><h2>View</h2></a>
-                        <a href="userBorrowingBooks.html"><h2>Borrow</h2></a>
-                    </td>
-
-
-
-
-
-
-
-
-
-                </tr>
-        </thead>
-            
-   
-            </table>
-    <table border="1" bgcolor="white" cellpadding="5" cellspacing="5" width="100%">
-        <thead>
-            <tr>
-
-                <td colspan="2"><img src="images/KafkaCover.jpg" alt="" width="200"> <h3>The Metamorphosis - المسخ</h3> 
-                  <b>By: Franz Kafka </b> Ahmed Khaled Tawfeek <br> 
-                  price : 250 L.E 
-                  <a href="userViewBook1.html" title="click to go"><h2>View</h2></a>
-                  
-                  <a href="userBorrowingBooks.html"><h2>Borrow</h2></a>
-                <td colspan="2">
-                    <img src="images/CrimeCover.jpg" alt="" width="200"> <h2>&nbsp;Crime and punishment - الجريمة و العقاب</h2> <b>By: </b> Fyodor Dostoevsky
-                    <br> price : 450 L.E 
-                    
-                     <a href=""><h2>View</h2></a>
-                      <a href="userBorrowingBooks.html"><h2>Borrow</h2></a>
-                </td>
-                <td colspan="2"><img src="images/awlad7artnacover.jpg" alt="" width="200"> <h2>&nbsp;&nbsp;&nbsp;Awlad 7aretna - اولاد حارتنا</h2> <b>By: </b> Nagieb Mahfouz <br> price : 320 L.E <a href=""><h2>view</h2></a>
-                  
-                        <a href="userBorrowingBooks.html"><h2>Borrow</h2></a></td>
-                <td colspan="2"><img src="images/TheOriginOfSCover.jpg" alt="" width="200"> <h2>&nbsp;&nbsp;&nbsp;The Origin Of Species - اصل الانواع </h2> <b>By: </b> Charles Darwin <br> price : 500 L.E 
-                  <a href="userViewBook2.html"><h2>view</h2></a>
-                   
-                    <a href="userBorrowingBooks.html"><h2>Borrow</h2></a>
-
-            </tr>
-        </thead>
-    </table>
-
-
-    </div>
+    <div id = booksShelf></div>
+    <script src="scrpt.js"></script>
 
 </body>
 </html>
