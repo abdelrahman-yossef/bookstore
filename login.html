@@ -5,36 +5,31 @@
 </head>
 <body background="images/library.png">
 
-<form>
+<form onsubmit="return valid_log()">
 <center>
     <br><br><br><br>
     <font color="white"><h1>Login</h1> </font>
         <h1 align="center">
 
 <label > </label>
- <input type="email" placeholder="E-Mail" ><br><br> 
+ <input id="em" type="email" placeholder="E-Mail" ><br><br> 
 
- <input type="password" placeholder="Password"><br><br> 
+ <input id="pas" type="password" placeholder="Password">
+ <input type="checkbox" onclick="showpass()">
+ <br><br> 
 
 
 </h1>
         <h2>
-            <td><a href="adminHP.html" title="click to go"><font color="cyan"><h2>Log in as admin</h2> </font> </a> </td>
+            <button type="submit">Login</button>
+       <br><br>
             <a href="signup.html"><font color="red">Sign Up</font></a> <br>
-            <a href="userNavBar.html"><font color="yellow">log in as user</font></a>
+           
         </h2>
 </center>
 
 </form>
-   
+   <script src="login.js"></script>
       
 </body>
 </html>
-
-
-
-
-                                   
-
-
-
