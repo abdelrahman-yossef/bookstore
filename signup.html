@@ -7,24 +7,32 @@
 <title>Book-Store </title>
 </head>
 <body background="images/library.png">
+    <script src="signup.js"></script>
     <div>
+        
         <h1 align="center">
             <br><br><br>
             <font color="white">Sign Up</font> 
             <br><br>
-                <form>
+                <form onsubmit="return  valid_sign()">
 
-                   
-                    <input type="text" placeholder="Name"><br><br>
+                     <input id="name" type="text" placeholder="Name"><br><br>
                     
-                    <input type="email" placeholder="E-Mail"><br><br>
+                    <input id="email" type="email" placeholder="E-Mail"><br><br>
                    
-                    <input type="password" placeholder="Password"><br><br>
-                    
-                    <input type="password" placeholder="Confirm Passowrd"><br><br>
+                    <input id="pass" type="password" placeholder="Password">
+                     <input type="checkbox" onclick="showpass()">
+                    <br><br>
+
+                    <input id="conf_pass" type="password" placeholder="Confirm Passowrd">
+                        <input type="checkbox" onclick="showpass2()">
+                    <br><br>
                     <label>Is Admin</label>
-                    <input type="checkbox"><br><br>
-                    <td><a href="login.html" title="click to go"> <font color="cyan">  <h2>Submit</h2></font> </a> </td>
+                    <input id="admin" type="checkbox"><br>
+                    <br>
+                   <button type="submit">signup</button>
+                    <br>
+                    <td><a href="login.html" title="click to go"> <font color="cyan">  <h2 >Login</h2></font> </a> </td>
 
 
                 </form>
@@ -34,11 +42,3 @@
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
