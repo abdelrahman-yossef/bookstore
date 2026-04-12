@@ -8,10 +8,10 @@ function getBooks (){
 
 
 
-function addBook (bID, btitle, bauthor, bgenre, bprice, bpages, bdescription, bImage){
+function addBook (bname , bauthor , bprice , bImage , bcatigory , bID , bdescription){
     let books =  getBooks();
      let newbook = {
-         bookID : bID, bookTitle : btitle , bookAuthor : bauthor , bookGenre : bgenre, bookPrice : bprice  , bookPages : bpages, Bookdescription : bdescription, bookImage : bImage
+         bookName : bname , bookAuthor : bauthor , bookPrice : bprice  ,bookImage : bImage , bookCatigory : bcatigory , bookID :bID , Bookdescription : bdescription 
      }
  books.push(newbook)
  saveBooks(books);
@@ -20,14 +20,14 @@ function addBook (bID, btitle, bauthor, bgenre, bprice, bpages, bdescription, bI
 
 
  function handleAdd() {
-    let title = document.getElementById("btitle").value;
+    let name = document.getElementById("bname").value;
     let author = document.getElementById("author").value;
     let price = document.getElementById("bprice").value;
     let image = document.getElementById("image").value;
-    let genre = document.getElementById("genre").value;
+    let catigory = document.getElementById("catigory").value;
     let description = document.getElementById("desc").value;
     let id = document.getElementById("id").value;
 
-    addBook(id, title, author, genre, price, pages, description, image); 
+    addBook(name, author, price, image , catigory , id , description); 
     window.location.href = "adminHP.html";
 }
