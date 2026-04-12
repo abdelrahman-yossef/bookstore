@@ -5,52 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book-Store</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body background="images/library.png">
-    <!-- =========Page title ================= -->
-    <div>
 
-        <center> <img src="images/BookStoreLogo3.png" alt="" width="900"></center>
+    <div>
+        <center><img src="images/BookStoreLogo3.png" alt="" width="900"></center>
     </div>
 
-    <!-- =========navigation bar ================= -->
     <nav>
         <hr>
-
         <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
-            <caption> navigation bar</caption>
-
+            <caption>navigation bar</caption>
             <thead>
                 <tr>
                     <td><a href="userNavBar.html"><h2>Home</h2></a></td>
-                    <td><a href="userBorrowingBooks.html" title="click to go"><h2>view your books</h2> </a> </td>
-                    <td><a href="userSearch.html" title="click to go"><h2>Search</h2> </a> </td>
-                    <td><a href="" title="click to go"><h2>View profile</h2> </a> </td>
-                    <td><a href="login.html" title="click to go"><h2>Sign out</h2> </a> </td>
-
+                    <td><a href="userBorrowingBooks.html"><h2>My Borrowed Books</h2></a></td>
+                    <td><a href="userSearch.html"><h2>Search</h2></a></td>
+                    <td><h2><span id="welcomeMsg">| Welcome</span></h2></td>
+                    <td><a href="#" onclick="logout()"><h2>Sign Out</h2></a></td>
                 </tr>
             </thead>
-
         </table>
         <hr>
         <h1 align="center">
-
             <hr>
-
-            <form action="userNavBar.html" method="get">
-                <input type="text" name="query" placeholder="Quick search..." size="60">
+            <form onsubmit="quickSearch(event)">
+                <input type="text" id="quickSearchInput" placeholder="Quick search..." size="60">
                 <button type="submit">Search</button>
             </form>
-
             <hr>
         </h1>
-
     </nav>
 
-    <!--======books Div ======  -->
-    <div id = booksShelf></div>
-    <script src="scrpt.js"></script>
+    <div id="booksShelf"></div>
 
+    <script src="userNavBar.js"></script>
 </body>
 </html>
