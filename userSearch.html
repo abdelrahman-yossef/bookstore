@@ -3,62 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <title>Search Books</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body background="images/searchBackground2.jpg">
 
-  <nav>
-    <a href="userNavBar.html"><b> <font color="cyan">Online Library </font> </b></a> &nbsp;&nbsp;
-    <a href="userNavBar.html"> <font color="cyan">Home </font>   </a> &nbsp;&nbsp;
-    <a href="borrowingBooks.html"> <font color="cyan">Browse My Books </font> </a> &nbsp;&nbsp;
-    <a href="search.html"> <font color="cyan">search </font></a> &nbsp;&nbsp;
-    
-    <span> <font color="white"><big>| Welcome User</big>  </font> </span> &nbsp;&nbsp;
-    <a href="login.html"> <font color="red">Log out </font></a>
-  </nav>
+<body background="images/searchBackground2.jpg">
+<audio src="sounds/buttonclick.mp3"></audio>
+<audio src="sounds/keydown.mp3"></audio>
+   <!-- =========navigation bar ================= -->
+    <nav class="navClass" >
+        <hr>
+        <table  width="100%">
+            <caption>navigation bar</caption>
+            <thead>
+                <tr>
+                    <td><a href="userNavBar.html"><h2>Home</h2></a></td>
+                    <td><a href="userBorrowingBooks.html"><h2>My Borrowed Books</h2></a></td>
+                    <td><a href="userSearch.html"><h2>Search</h2></a></td>
+                    <td><h2><span id="welcomeMsg">Welcome</span></h2></td>
+                    <td><a href="#" onclick="logout()"><h2>Sign Out</h2></a></td>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+        </nav>
+       <style>.navClass {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}</style>
 
   <hr>
 
-  <font color="white"><h2>Search for Books</h2> </font> 
+  <h2><font color="white">Search for Books</font></h2>
 
-  <form action="search_results.html" method="get">
-    
-    <input type="text" name="query" placeholder="Search" required>
+  <form action="#">
+    <input id="inputsearch" type="text" name="query" placeholder="Search" required>
 
-    &nbsp;&nbsp; 
     <select name="searchType" required>
       <option value="title">Title</option>
       <option value="author">Author</option>
       <option value="category">Category</option>
     </select>
 
-    <button type="submit">Search</button>
+    <button onclick="document.getElementById('s').play()" type="submit">Search</button>
   </form>
 
-  <br>
   <hr>
 
-  <font color="white"><big><h3>Results</h3> </big></font>
-  <table border="1" cellpadding="5" cellspacing="0" bgcolor="lightgrey" >
-    <tr>
-      <th>ID</th>
-      <th>Book Name</th>
-      <th>Author</th>
-      <th>Category</th>
-      <th>Status</th>
-      <th>Link</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Utopia</td>
-      <td>Ahmed Khaled</td>
-      <td>Novel</td>
-      <td>Available</td>
-      <td><a href="book.html?id=1">View</a></td>
-    </tr>
-  </table>
+  <h3><font color="white">Results</font></h3>
 
-  <br><hr>
-  <font color="lightgrey"><p>2026 Online Library Project</p> </font>
+  <table id="booksTable" border="1"></table> 
+
+  <hr>
+
+  <p><font color="lightgrey">2026 Online Library Project</font></p>
+
+  <script src="search.js"></script>
 
 </body>
 </html>

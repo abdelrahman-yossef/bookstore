@@ -8,13 +8,11 @@
 </head>
 <body background="images/library.png">
 
-    <div>
-        <center><img src="images/BookStoreLogo3.png" alt="" width="900"></center>
-    </div>
+   
 
-    <nav >
+    <nav class="navClass" >
         <hr>
-        <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
+        <table  width="100%">
             <caption>navigation bar</caption>
             <thead>
                 <tr>
@@ -27,7 +25,17 @@
             </thead>
         </table>
         <hr>
-        <h1 align="center">
+        </nav>
+       <style>.navClass {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}</style>
+    
+<div>
+        <center><img src="images/BookStoreLogo3.png" alt="" width="900"></center>
+    </div> 
+    <h1 align="center">
             <hr>
             <form onsubmit="quickSearch(event)">
                 <input type="text" id="quickSearchInput" placeholder="Quick search..." size="60">
@@ -35,10 +43,8 @@
             </form>
             <hr>
         </h1>
-    </nav>
-
     <div id="booksShelf"></div>
-
+ 
     <script src="userNavBar.js"></script>
 </body>
 </html>        
