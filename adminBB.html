@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin - Borrowed Books</title>
+
+<style>
+body{
+    background-color:white;
+    margin:0;
+    font-family: Arial;
+}
+
+table{
+    text-align:center;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding:10px;
+}
+</style>
+
+<script defer src="adminBB.js"></script>
+</head>
+
+<body background="images/library.png">
+
+<!-- ===== Logo ===== -->
+<center>
+<img src="images/BookStoreLogo.png" width="700">
+</center>
+
+<!-- ===== Nav ===== -->
+<nav>
+<hr>
+<table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
+<tr>
+    <td><a href="adminHP.html"><h2>Home</h2></a></td>
+    <td><a href="add.html"><h2>Add Book</h2></a></td>
+    <td><a href="adminSearch.html"><h2>Search</h2></a></td>
+    <td><a href="#"><h2>Profile</h2></a></td>
+    <td><a href="login.html"><h2>Sign out</h2></a></td>
+</tr>
+</table>
+<hr>
+</nav>
+
+<h2 style="text-align:center;">Borrowed Books Management</h2>
+
+<div id="booksContainer"></div>
+
+</body>
+</html>

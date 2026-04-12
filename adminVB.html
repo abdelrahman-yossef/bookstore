@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin - View Book</title>
+<link rel="stylesheet" href="adminViewBook.css">
+<script defer src="adminVB.js"></script>
+</head>
+
+<body background="images/library.png">
+
+<!-- ===== Logo ===== -->
+<center>
+<img src="images/BookStoreLogo.png" width="700">
+</center>
+
+<!-- ===== Navigation ===== -->
+<nav>
+    <hr>
+    <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
+        <tr>
+            <td><a href="adminHP.html"><h2>Home</h2></a></td>
+            <td><a href="adminSearch.html"><h2>Search</h2></a></td>
+            <td><a href="add.html"><h2>Add Book</h2></a></td>
+            <td><a href="#"><h2>Profile</h2></a></td>
+            <td><a href="login.html"><h2>Sign out</h2></a></td>
+        </tr>
+    </table>
+    <hr>
+</nav>
+
+<!-- ===== Book Details ===== -->
+<table class="book-table">
+<tr>
+
+<td class="img-cell">
+    <img id="bookImage" src="" width="300">
+</td>
+
+<td class="book-box">
+    <h1 id="title"></h1>
+    <h3 id="author"></h3>
+    <h3 id="genre"></h3>
+    <h3 id="pages"></h3>
+    <h3 id="price"></h3>
+    <p id="description"></p>
+    <h3>Status: <span id="status"></span></h3>
+
+    <button id="toggleBtn" onclick="toggleAvailability()">Mark Unavailable</button>
+    <button class="danger" onclick="deleteBook()">Delete Book</button>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
