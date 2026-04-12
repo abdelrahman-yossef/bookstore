@@ -3,18 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Add New Book</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body background="images/addBookBackground.png">
 
-   <nav>
-    <a href="adminHP.html"><b> <font color="cyan">Online Library </font> </b></a> &nbsp;&nbsp;
-    <a href="adminHP.html"> <font color="cyan">Home </font>   </a> &nbsp;&nbsp;
-    <a href="borrowingBooks.html"> <font color="cyan">Browse My Books </font> </a> &nbsp;&nbsp;
-    <a href="search.html"> <font color="cyan">search </font></a> &nbsp;&nbsp;
-    <a href="add.html"> <font color="cyan">Add a book </font></a> &nbsp;&nbsp;
-    <span> <font color="white"><big>| Welcome Admin</big>  </font> </span> &nbsp;&nbsp;
-    <a href="login.html"> <font color="red">Log out </font></a>
-  </nav>
+    <nav>
+        <hr>
+
+        <table class="navClass" width="100%">
+            <caption> navigation bar</caption>
+
+            <thead>
+                <tr>
+                    <td><a href="adminHP.html"><h2>Home</h2></a></td>
+                    <td><a href="borrowingBooks.html" title="click to go"><h2>view your books</h2> </a> </td>
+                    <td ><a href="search.html" title="click to go"><h2>search</h2> </a> </td>
+                    <td><a href="add.html" title="click to go"><h2>Add a Book</h2> </a> </td>
+                    <td><a href="" title="click to go"><h2>View profile</h2> </a> </td>
+                    <td><a href="login.html" title="click to go"><h2>Sign out</h2> </a> </td>
+
+                </tr>
+            </thead>
+
+        </table>
+        <hr>
+     
+
+    </nav>
 
   <hr>
 
@@ -24,33 +39,33 @@
   <br>
 
   
-
+<form class="signupClass" action=""> 
      <br>
-    <input type="number" id="id" required placeholder="Book ID"> <br><br>
+    <input type="number" id="id" required placeholder="Book ID"> 
 
-    <br>
-    <input type="text" id="bname" required placeholder="Book Name"> <br><br>
+    
+    <input type="text" id="bname" required placeholder="Book Name"> 
 
-    <br>
-    <input type="text" id="bprice" required placeholder="Book Price"> <br><br>
+    
+    <input type="text" id="bprice" required placeholder="Book Price"> 
 
-    <br>
-    <input type="text" id="author" required placeholder="Author Name"> <br><br>
-    <input type="text" id="image"  placeholder="enter image path"> <br><br>
+    
+    <input type="text" id="author" required placeholder="Author Name"> 
+    <input type="text" id="image"  placeholder="enter image path"> 
 
-    <font color="white">Category:  </font><br>
+    Category:  <br>
     <select id="catigory" required>
       <option value="fiction">Fiction</option>
       <option value="science">Science</option>
       <option value="history">History</option>
     </select> <br><br>
 
-    <br>
+    
     <textarea id="desc" rows="4" cols="30"  placeholder=" Description"></textarea> <br><br>
 
     <button onclick="handleAdd()">Add Book</button>
     <input type="reset" value="Clear">
-
+</form>
 
 
   <br>
