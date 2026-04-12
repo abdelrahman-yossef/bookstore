@@ -74,3 +74,11 @@ input.addEventListener("keydown", () => {
   sound.play();
   sound.volume = 0.2;
 });
+
+
+
+
+function logout() {
+
+window.location.href="login.html";
+}
