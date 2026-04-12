@@ -20,13 +20,14 @@ let password=document.getElementById('pas').value;
     let saveddata=JSON.parse(localStorage.getItem("user"));
 
     if(saveddata.email==email && saveddata.password==password){
-        alert("Successfull login!");
-       if(saveddata.role=="admin"){
+
+    alert("Successfull login!");
+    if(saveddata.role=="admin"){
         window.location.href="adminHP.html";
-     }   
-     else{
+    }   
+    else{
         window.location.href="userNavBar.html";
-     }
+    }
     }
     else{
         alert("Wrong email or password!");

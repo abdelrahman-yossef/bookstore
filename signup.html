@@ -18,23 +18,24 @@
             <br><br>
                 <form class="signupClass" onsubmit="return  valid_sign()">
 
-                     <input  id="name" type="text" placeholder="Name">
-                    
-                    <input  id="email" type="email" placeholder="E-Mail">
-                   
-                    <input  id="pass" type="password" placeholder="Password">
-                     <input  type="checkbox" onclick="showpass()">
-                    
+                    <input id="name" type="text" placeholder="Name">
+
+                    <input id="email" type="email" placeholder="E-Mail">
+
+                    <input id="pass" type="password" placeholder="Password">
+                    <input type="checkbox" onclick="showpass('pass')"> <label>Show</label>
+
+
 
                     <input id="conf_pass" type="password" placeholder="Confirm Passowrd">
-                        <input type="checkbox" onclick="showpass2()">
-                    
-                    <label>Admin?</label>
-                    <input id="admin" type="checkbox">
+                    <input type="checkbox" onclick="showpass('conf_pass')">  <label>Show</label>
+
                    
-                   <button onclick="document.getElementById('s').play()" type="submit">signup</button>
-                    
-                    <td><a href="login.html" title="click to go"> <font color="cyan">  <h2 >Login</h2></font> </a> </td>
+                    <input id="admin" type="checkbox">
+                    <label>Admin?</label>
+                    <button onclick="document.getElementById('s').play()" type="submit">signup</button>
+
+                    <td><a href="login.html" title="click to go"> <font color="cyan">  <h2>Login</h2></font> </a> </td>
 
 
                 </form>

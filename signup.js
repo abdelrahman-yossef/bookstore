@@ -36,17 +36,8 @@ localStorage.setItem("user",JSON.stringify(user));
 alert("account created succesfully");
 return true;
 }
-function showpass(){
-     let password=document.getElementById('pass');
-     if(password.type==="password"){
-        password.type="text";
-     }
-     else{
-        password.type="password";
-     }
-     
-}function showpass2(){
-     let password=document.getElementById('conf_pass');
+function showpass(fieldId){
+     let password=document.getElementById(fieldId);
      if(password.type==="password"){
         password.type="text";
      }
