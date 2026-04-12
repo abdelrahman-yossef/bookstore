@@ -1,33 +1,52 @@
-function saveBooks(books){
-    localStorage.setItem("books",JSON.stringify(books))
+function saveBooks(books) {
+    localStorage.setItem("books", JSON.stringify(books));
 }
 
-function getBooks (){
-    return JSON.parse(localStorage.getItem("books")) || [] 
+function getBooks() {
+    return JSON.parse(localStorage.getItem("books")) || [];
 }
 
+function addBook(id, title, author, price, image, genre, description) {
+    let books = getBooks();
+    let newBook = {
+        id: parseInt(id),
+        title: title,
+        author: author,
+        genre: genre,
+        borrowDate: "",
+        returnDate: "",
+        status: "Available",
+        image: image,
+        pages: 0,
+        price: parseFloat(price),
+        description: description
+    };
+    books.push(newBook);
+    saveBooks(books);
+}
 
+function handleAdd() {
+    let id          = document.getElementById("id").value.trim();
+    let name        = document.getElementById("bname").value.trim();
+    let author      = document.getElementById("author").value.trim();
+    let price       = document.getElementById("bprice").value.trim();
+    let image       = document.getElementById("image").value.trim();
+    let genre       = document.getElementById("catigory").value;
+    let description = document.getElementById("desc").value.trim();
 
-function addBook (bname , bauthor , bprice , bImage , bcatigory , bID , bdescription){
-    let books =  getBooks();
-     let newbook = {
-         bookName : bname , bookAuthor : bauthor , bookPrice : bprice  ,bookImage : bImage , bookCatigory : bcatigory , bookID :bID , Bookdescription : bdescription 
-     }
- books.push(newbook)
- saveBooks(books);
- }
- 
+    if (!id || !name || !author || !price) {
+        alert("Please fill in all required fields.");
+        return;
+    }
 
+    let books = getBooks();
+    if (books.some(b => b.id === parseInt(id))) {
+        alert("A book with this ID already exists.");
+        return;
+    }
 
- function handleAdd() {
-    let name = document.getElementById("bname").value;
-    let author = document.getElementById("author").value;
-    let price = document.getElementById("bprice").value;
-    let image = document.getElementById("image").value;
-    let catigory = document.getElementById("catigory").value;
-    let description = document.getElementById("desc").value;
-    let id = document.getElementById("id").value;
-
-    addBook(name, author, price, image , catigory , id , description); 
+    document.getElementById("s").play();
+    addBook(id, name, author, price, image, genre, description);
+    alert("Book added successfully!");
     window.location.href = "adminHP.html";
 }

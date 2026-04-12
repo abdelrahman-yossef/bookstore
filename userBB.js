@@ -27,12 +27,11 @@ const defaultBooks = [
     }
 ];
 
-
 function loadBooks() {
     const stored = JSON.parse(localStorage.getItem("books"));
-    if (!stored || stored.some(b => b.pages === undefined || b.image === undefined)) {
+    if (!stored || stored.some(b => b.id === undefined || b.title === undefined)) {
         localStorage.setItem("books", JSON.stringify(defaultBooks));
-        return defaultBooks;
+        return JSON.parse(JSON.stringify(defaultBooks));
     }
     return stored;
 }
@@ -45,17 +44,13 @@ function renderTable(data) {
     data.forEach((book, index) => {
         tbody.innerHTML += `
         <tr>
-            <td>
-                <a href="userVB.html?id=${book.id}">${book.title}</a>
-            </td>
+            <td><a href="userVB.html?id=${book.id}">${book.title}</a></td>
             <td>${book.author}</td>
             <td>${book.genre}</td>
             <td>${book.borrowDate}</td>
             <td>${book.returnDate}</td>
             <td>${book.status}</td>
-            <td>
-                <button onclick="returnBook(${index})">Return</button>
-            </td>
+            <td><button onclick="returnBook(${index})">Return</button></td>
         </tr>
         `;
     });

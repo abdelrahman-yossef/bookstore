@@ -7,17 +7,17 @@
 </head>
 
 <body background="images/searchBackground2.jpg">
-<audio src="sounds/buttonclick.mp3"></audio>
-<audio src="sounds/keydown.mp3"></audio>
-   <!-- =========navigation bar ================= -->
-    <nav  >
+<audio id="s" src="sounds/buttonclick.mp3"></audio>
+
+   <!-- ========= navigation bar ========= -->
+    <nav>
         <hr>
         <table class="navClass" width="100%">
             <caption>navigation bar</caption>
             <thead>
                 <tr>
                     <td><a href="userNavBar.html"><h2>Home</h2></a></td>
-                    <td><a href="userBorrowingBooks.html"><h2>My Borrowed Books</h2></a></td>
+                    <td><a href="userBB.html"><h2>My Borrowed Books</h2></a></td>
                     <td><a href="userSearch.html"><h2>Search</h2></a></td>
                     <td><h2><span id="welcomeMsg">Welcome</span></h2></td>
                     <td><a href="login.html" onclick="logout()"><h2>Sign Out</h2></a></td>
@@ -25,12 +25,8 @@
             </thead>
         </table>
         <hr>
-        </nav>
-       <style>.navClass {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}</style>
+    </nav>
+    <style>.navClass { position: sticky; top: 0; z-index: 1000; }</style>
 
   <hr>
 
@@ -52,13 +48,13 @@
 
   <h3><font color="white">Results</font></h3>
 
-  <table id="booksTable" border="1"></table> 
+  <table id="booksTable" border="1"></table>
 
   <hr>
 
   <p><font color="lightgrey">2026 Online Library Project</font></p>
 
-  <script src="search.js"></script>
+  <script src="userSearch.js"></script>
 
 </body>
 </html>
