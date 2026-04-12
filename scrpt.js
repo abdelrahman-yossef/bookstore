@@ -53,3 +53,13 @@ function editBook(id) {
 }
 document.addEventListener("DOMContentLoaded", function () {
     displayBooks();});
+    
+
+
+const sound = new Audio("sounds/buttonclick.mp3");
+document.querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    sound.currentTime = 0;
+    sound.play();
+  });
+});

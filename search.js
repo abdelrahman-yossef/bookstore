@@ -65,3 +65,12 @@ window.onload = function () {
       displayResults(filtered);
   });
 }
+
+
+const input = document.getElementById("inputsearch");
+
+input.addEventListener("keydown", () => {
+  const sound = new Audio("sounds/keydown.mp3");
+  sound.play();
+  sound.volume = 0.2;
+});

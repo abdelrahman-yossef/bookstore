@@ -39,6 +39,7 @@
   <br>
 
   
+<audio id="s" src="sounds/buttonclick.mp3"></audio>
 <form class="signupClass" action=""> 
      <br>
     <input type="number" id="id" required placeholder="Book ID"> 
@@ -63,8 +64,8 @@
     
     <textarea id="desc" rows="4" cols="30"  placeholder=" Description"></textarea> <br><br>
 
-    <button onclick="handleAdd()">Add Book</button>
-    <input type="reset" value="Clear">
+    <button onclick="document.getElementById('s').play()" onclick="handleAdd()">Add Book</button>
+    <input onclick="document.getElementById('s').play()" type="reset" value="Clear">
 </form>
 
 

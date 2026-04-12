@@ -7,7 +7,7 @@ function displayWelcome() {
     let welcomeSpan = document.getElementById("welcomeMsg");
 
     if (user) {
-        welcomeSpan.innerText = "| Welcome, " + user.name;
+        welcomeSpan.innerText = " Welcome, " + user.name;
     } else {
         window.location.href = "login.html";
     }

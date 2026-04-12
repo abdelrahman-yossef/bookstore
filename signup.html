@@ -7,8 +7,10 @@
 <title>Book-Store </title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body background="images/library.png">
+<body background="images/entry.png">
     <script src="signup.js"></script>
+    <audio src="sounds/buttonclick.mp3"></audio>
+    <audio id="keydownSound" src="sounds/keydown.mp3"></audio>
     <div>
         
         <h1 align="center">
@@ -16,12 +18,12 @@
             <br><br>
                 <form class="signupClass" onsubmit="return  valid_sign()">
 
-                     <input id="name" type="text" placeholder="Name">
+                     <input  id="name" type="text" placeholder="Name">
                     
-                    <input id="email" type="email" placeholder="E-Mail">
+                    <input  id="email" type="email" placeholder="E-Mail">
                    
-                    <input id="pass" type="password" placeholder="Password">
-                     <input type="checkbox" onclick="showpass()">
+                    <input  id="pass" type="password" placeholder="Password">
+                     <input  type="checkbox" onclick="showpass()">
                     
 
                     <input id="conf_pass" type="password" placeholder="Confirm Passowrd">
@@ -30,7 +32,7 @@
                     <label>Admin?</label>
                     <input id="admin" type="checkbox">
                    
-                   <button type="submit">signup</button>
+                   <button onclick="document.getElementById('s').play()" type="submit">signup</button>
                     
                     <td><a href="login.html" title="click to go"> <font color="cyan">  <h2 >Login</h2></font> </a> </td>
 
