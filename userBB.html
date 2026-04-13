@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <title>User - Borrowed Books</title>
 
@@ -26,35 +27,34 @@ th, td{
 
 <body background="images/library.png">
 
-<!-- ===== Logo ===== -->
-<center>
-    <img src="images/BookStoreLogo.png" width="700">
-</center>
+
 
 <!-- ===== Navigation ===== -->
-<nav>
-    <hr>
-
-    <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
-        <tr>
-            <td><a href="userNavBar.html"><h2>Home</h2></a></td>
-            <td><a href="userSearch.html"><h2>Search</h2></a></td>
-            <td><a href="userBB.html"><h2>My Books</h2></a></td>
-            <td><a href="#"><h2>Profile</h2></a></td>
-            <td><a href="login.html"><h2>Sign out</h2></a></td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <div style="text-align:center;">
-        <input type="text" id="searchInput" placeholder="Search your books...">
-        <button onclick="filterBooks()">Search</button>
-    </div>
-
-    <hr>
-</nav>
-
+<nav class="navClass" >
+        <hr>
+        <table class="navClass" width="100%">
+            <caption>navigation bar</caption>
+            <thead>
+                <tr>
+                    <td><a href="userNavBar.html"><h2>Home</h2></a></td>
+                    <td><a href="userBB.html"><h2>My Borrowed Books</h2></a></td>
+                    <td><a href="userSearch.html"><h2>Search</h2></a></td>
+                    <td><h2><span id="welcomeMsg">| Welcome</span></h2></td>
+                    <td><a href="#" onclick="logout()"><h2>Sign Out</h2></a></td>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+        </nav>
+       <style>.navClass {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}</style>
+<!-- ===== Logo ===== -->
+<center>
+    <img src="images/BookStoreLogo3.png" width="700">
+</center>
 <!-- ===== Title ===== -->
 <table border="1" bgcolor="grey" width="100%">
     <tr>

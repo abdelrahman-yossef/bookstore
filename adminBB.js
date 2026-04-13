@@ -44,26 +44,21 @@ function renderBooks() {
 
     books.forEach((book, index) => {
         container.innerHTML += `
-        <div class="book-card">
-            <table class="book-container">
-                <tr>
-                    <td class="left">
-                        <img src="${book.image}" width="200">
-                    </td>
-                    <td class="right">
-                        <h2>${book.title}</h2>
-                        <p><b>Author:</b> ${book.author}</p>
-                        <p><b>Genre:</b> ${book.genre}</p>
-                        <p><b>Borrow Date:</b> ${book.borrowDate}</p>
-                        <p><b>Return Date:</b> ${book.returnDate}</p>
-                        <p><b>Status:</b> ${book.status}</p>
-                        <button onclick="setStatus(${index})">Set Status</button>
-                        <button class="danger" onclick="removeBook(${index})">Remove</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        `;
+<div class="book-card">
+    <img src="${book.image}" width="150">
+    
+    <h2>${book.title}</h2>
+
+    <p>Price: ${book.price} L.E</p>
+    <p>Author: ${book.author}</p>
+  <p><h4>Genre:</h4> ${book.genre}</p>
+    <p><h4>Borrow Date:</h4> ${book.borrowDate}</p>
+    <p><h4>Return Date:</h4> ${book.returnDate}</p>
+  <p><h4>Status:</h4> ${book.status}</p>
+  <button onclick="setStatus(${index})">Set Status</button>
+   <button class="danger" onclick="removeBook(${index})">Remove</button>
+</div>
+`;
     });
 }
 

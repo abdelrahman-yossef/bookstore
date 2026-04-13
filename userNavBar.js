@@ -26,22 +26,25 @@ function displayBooks() {
         return;
     }
 
-    let table = "<table border='1' cellpadding='10' cellspacing='0' width='100%'>";
-    table += "<tr><th>ID</th><th>Book Name</th><th>Author</th><th>Category</th><th>Status</th><th>Action</th></tr>";
+      books.forEach(book => {
+        shelf.innerHTML += `
+        <div class="book-card">
+            <img src="${book.image}" alt="${book.title}" width=150>
 
-    books.forEach(book => {
-        table += `<tr>
-            <td>${book.id}</td>
-            <td>${book.title}</td>
-            <td>${book.author}</td>
-            <td>${book.genre}</td>
-            <td>${book.status}</td>
-            <td><a href="userVB.html?id=${book.id}">View Details</a></td>
-        </tr>`;
+            <h2>${book.title}</h2>
+
+            <p><h4>Author:</h4> ${book.author}</p>
+            <p><h4>Category:</h4>  ${book.genre}</p>
+            <p class="${book.status === "Borrowed" ? "borrowed" : "available"}">
+                ${book.status}
+            </p>
+
+            <a href="userVB.html?id=${book.id}" class="view-btn">
+                View Details
+            </a>
+        </div>
+        `;
     });
-
-    table += "</table>";
-    shelf.innerHTML = table;
 }
 
 function logout() {

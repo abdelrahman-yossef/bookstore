@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>View Book</title>
+<link rel="stylesheet" href="style.css">
 <style>
 body{
     background-color:white;
@@ -19,28 +20,37 @@ button{
 <script defer src="userVB.js"></script>
 </head>
 <body background="images/library.png">
+
+<!-- ======= Navigation ======= -->
+    <nav class="navClass" >
+        <hr>
+        <table class="navClass" width="100%">
+            <caption>navigation bar</caption>
+            <thead>
+                <tr>
+                    <td><a href="userNavBar.html"><h2>Home</h2></a></td>
+                    <td><a href="userBB.html"><h2>My Borrowed Books</h2></a></td>
+                    <td><a href="userSearch.html"><h2>Search</h2></a></td>
+                    <td><h2><span id="welcomeMsg">Welcome</span></h2></td>
+                    <td><a href="#" onclick="logout()"><h2>Sign Out</h2></a></td>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+        </nav>
+       <style>.navClass {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}</style>
 <!-- ======= Logo ======= -->
 <center>
-<img src="images/BookStoreLogo.png" width="700">
+<img src="images/BookStoreLogo3.png" width="700">
 </center>
-<!-- ======= Navigation ======= -->
-<nav>
-    <hr>
-    <table border="1" bgcolor="lightgrey" cellpadding="11" cellspacing="5" width="100%">
-        <tr>
-            <td><a href="userNavBar.html"><h2>Home</h2></a></td>
-            <td><a href="userBB.html"><h2>My Books</h2></a></td>
-            <td><a href="userSearch.html"><h2>Search</h2></a></td>
-            <td><a href="#"><h2>Profile</h2></a></td>
-            <td><a href="login.html"><h2>Sign out</h2></a></td>
-        </tr>
-    </table>
-    <hr>
-</nav>
 <!-- ======= Book Details ======= -->
-<table border="1" bgcolor="white" width="100%" cellpadding="20">
+<table id="userViewBookTable" border="1" bgcolor="grey" width="100%" cellpadding="20">
 <tr>
-<td width="30%" align="center">
+<td width="30%" align="center" bgcolor="darkgrey">
     <img id="bookImage" src="" width="300">
 </td>
 <td class="book-box">

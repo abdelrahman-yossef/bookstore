@@ -16,8 +16,8 @@ function displayBooks() {
         <div class="book">
             <img src="${book.image}" width="150">
             <h2>${book.title}</h2>
-            <p>Price: ${book.price} L.E</p>
-            <p>Author: ${book.author}</p>
+            <p><h4>Price:</h4> ${book.price} L.E</p>
+            <p><h4>Author:</h4>Author: ${book.author}</p>
             <button onclick="editBook(${book.id})">Edit</button>
             <button onclick="deleteBook(${book.id})">Delete</button>
         </div>

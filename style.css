@@ -5,7 +5,15 @@
 
 h2 {
   font-family: 'Pixel1';
-  color: brown;
+  color: rgb(179, 125, 32);
+}
+h4{
+   font-family: 'Pixel1';
+  color: rgb(139, 39, 39);
+}
+h5{
+   font-family: 'Pixel2';
+  color: rgb(233, 6, 6);
 }
 a {
   text-decoration: none;
@@ -30,6 +38,7 @@ background-color: #6a6a6a;
 
 }
 
+
 .navClass{
    border-collapse: collapse; 
   
@@ -52,13 +61,20 @@ th {
   text-transform: uppercase;
 }
 
-
+table{
+  table-layout: fixed;
+  word-break: break-word;
+}
+td {
+  height: 30px;
+  font-size: clamp(10px, 1vw, 14px);
+}
 
 
 
 
 td:hover {
-  background-color: rgb(154, 108, 108); 
+  background-color: rgb(61, 55, 55); 
   cursor: pointer;
 }
 button {
@@ -83,7 +99,25 @@ button:hover {
   border: 3px solid black;
   font-family: 'Pixel1', monospace;
   text-align: center;
+   width: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
+.book-card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background: #222;
+  color: #0f0;
+  border: 3px solid black;
+  font-family: 'Pixel1', monospace;
+  text-align: center;
+   width: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 
 .book img {
   image-rendering: pixelated;

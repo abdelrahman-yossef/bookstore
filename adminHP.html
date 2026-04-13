@@ -12,7 +12,10 @@
     <audio src="sounds/buttonclick.mp3"></audio>
     
      <!-- =========navigation bar ================= -->
-    <nav>
+
+
+
+    <nav class="navClass">
         <hr>
 
         <table class="navClass"  width="100%">
@@ -32,15 +35,20 @@
 
         </table>
         <hr>
-     
+     <style> .navClass {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}</style>
 
     </nav>
-    <!-- =========Page title ================= -->
+   
+          <!-- =========Page title ================= -->
     <div>
 
         <center> <img src="images/BookStoreLogo3.png" alt="" width="600"></center>
     </div>
-       
+<!-- =========quick search ================= -->
     <h1 align="center">
 
             <hr>
@@ -56,8 +64,7 @@
     
 
 
-   
-
+     
     <!--======books Div ======  -->
     <div id = booksShelf></div>
     <script src="scrpt.js"></script>
